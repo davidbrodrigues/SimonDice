@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SimonDice</string>
+    <string name="start">Start</string>
+    <string name="boton_amarillo">boton amarillo</string>
+    <string name="boton_verde">boton verde</string>
+    <string name="boton_rojo">boton rojo</string>
+    <string name="boton_azul">boton azul</string>
+    <string name="textview">textview</string>
+</resources>
