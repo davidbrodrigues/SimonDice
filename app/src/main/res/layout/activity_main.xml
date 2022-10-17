@@ -27,6 +27,7 @@
         android:layout_marginBottom="21dp"
         android:background=" #f9f500 "
         android:contentDescription="@string/boton_amarillo"
+        android:stateListAnimator="@android:anim/fade_in"
         app:layout_constraintBottom_toTopOf="@+id/rojo"
         app:layout_constraintEnd_toStartOf="@+id/azul"
         app:layout_constraintStart_toStartOf="parent"
@@ -42,6 +43,7 @@
         android:layout_marginBottom="21dp"
         android:background="  #0004f9 "
         android:contentDescription="@string/boton_azul"
+        android:stateListAnimator="@android:anim/fade_in"
         app:layout_constraintBottom_toTopOf="@+id/verde"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/amarillo"
@@ -56,6 +58,7 @@
         android:layout_marginBottom="81dp"
         android:background="  #f90000  "
         android:contentDescription="@string/boton_rojo"
+        android:stateListAnimator="@android:anim/fade_in"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toStartOf="@+id/verde"
         app:layout_constraintStart_toStartOf="parent"
@@ -69,6 +72,7 @@
         android:layout_marginBottom="81dp"
         android:background="  #16ce00  "
         android:contentDescription="@string/boton_verde"
+        android:stateListAnimator="@android:anim/fade_in"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -76,7 +80,7 @@
         app:layout_constraintTop_toBottomOf="@+id/azul" />
 
     <Button
-        android:id="@+id/start"
+        android:id="@+id/bstart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="158dp"
