@@ -2,6 +2,8 @@ package com.example.simondice
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
+import android.widget.Toast
 
 
 class MainActivity : AppCompatActivity() {
@@ -16,14 +18,19 @@ class MainActivity : AppCompatActivity() {
         var velocidad = 1
 
 
+        val bstart: Button = findViewById(R.id.bstart)
+        val azul: Button = findViewById(R.id.azul)
+        val amarillo: Button = findViewById(R.id.amarillo)
+        val rojo: Button = findViewById(R.id.rojo)
+        val verde: Button = findViewById(R.id.verde)
+
     }
 
 
     private fun ClickInicio(){
-        bstart.setOnClickListener{
-            ronda=1
-            velocidad=1
-        }
+        Toast.makeText(, "juego iniciado", Toast.LENGTH_SHORT).show()
+
+
 
     }
 }
