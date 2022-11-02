@@ -12,25 +12,27 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
-        var secuencia = ArrayList<String>()
-        var ronda = secuencia.size
-        var record = 0
-        var velocidad = 1
+        // variables
+        var random = (0..3).random()
+        val cuatroColores = arrayOf("Verde", "Amarillo", "Azul", "Rojo")
+        val todosLosColores: ArrayList<String> = arrayListOf(cuatroColores[random])
+        val iniciar = findViewById<Button>(R.id.bstart)
+        val arrayFuncionesColores = arrayOf(Green::class.java, Yellow::class.java, Blue::class.java, Red::class.java)
 
+        // Colores del juego random
+        for(i in 0..3){
+            random = (0..3).random()
+            todosLosColores.add(cuatroColores[random])
+        }
 
-        val bstart: Button = findViewById(R.id.bstart)
-        val azul: Button = findViewById(R.id.azul)
-        val amarillo: Button = findViewById(R.id.amarillo)
-        val rojo: Button = findViewById(R.id.rojo)
-        val verde: Button = findViewById(R.id.verde)
+        // boton de inicio del juego
+        bstart.setOnClickListener {
+            val intento = intento(this@MainActivity, arrayFuncionesColores[random])
+            intento.putStringArrayListExtra("colores", todosLosColores)
+            intento.putExtra("contador", 0)
+            intento.putExtra("puntuacion", 0)
+            startActivity(intento)
 
     }
 
-
-    private fun ClickInicio(){
-        Toast.makeText(, "juego iniciado", Toast.LENGTH_SHORT).show()
-
-
-
-    }
 }
